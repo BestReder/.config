@@ -1,6 +1,29 @@
-# My config...
+# My config
 
-This config folder includes `i3` and `alacritty` config, however, I'm using [dwm](https://github.com/theniceboy/dwm) and [st](https://github.com/theniceboy/st) now.
+这个配置文件夹包括`i3`和`alacritty`配置，但是，我现在使用[dwm](https://dwm.suckless.org/)和[st](https://st.suckless.org/)。
+
+# archlinuxcn(163源)
+
+在`/etc/pacman.conf`文件末尾添加以下内容：
+
+```
+[archlinuxcn]
+SigLevel = Optional TrustedOnly
+Server = http://mirrors.163.com/archlinux-cn/$arch
+```
+
+之后安装 archlinuxcn-keyring 包导入 GPG key
+
+# blackarch(中科大源)
+
+在 `/etc/pacman.conf` 文件末尾添加两行：
+
+```
+[blackarch]
+Server = https://mirrors.ustc.edu.cn/blackarch/$repo/os/$arch
+```
+
+然后请安装 `blackarch-keyring` 包以导入 GPG key。
 
 ## Ranger
 
@@ -18,7 +41,7 @@ export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
 ```
 
-#### Fcitx users need to set the first input method to be Keyboard - layout
+#### Fcitx用户需要将第一个输入法设置为键盘-布局
 
 ## fonts
 
