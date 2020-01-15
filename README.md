@@ -1,6 +1,6 @@
-# My config
+# 我的配置
 
-这个配置文件夹包括`i3`和`alacritty`配置，但是，我现在使用[dwm](https://dwm.suckless.org/)和[st](https://st.suckless.org/)。
+这个配置文件夹包括`i3`和`alacritty`配置。
 
 # archlinuxcn(163源)
 
@@ -85,6 +85,8 @@ yay -S wqy-bitmapfont wqy-microhei wqy-microhei-lite wqy-zenhei adobe-source-han
 ## Arch Packages I Installed:
 
 ```
+i3lock
+i3lock-fancy-git
 acpi
 acpitool
 adapta-gtk-theme
