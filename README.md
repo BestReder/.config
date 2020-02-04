@@ -1,6 +1,6 @@
 # 我的配置
 
-这个配置文件夹包括`i3`和`alacritty`配置。
+这个配置文件夹包括`i3`和`alacritty`配置，但是现在我使用的是`dwm`和`alacritty`
 
 # archlinuxcn(163源)
 
@@ -29,7 +29,7 @@ Server = https://mirrors.ustc.edu.cn/blackarch/$repo/os/$arch
 
 use `pip install ueberzug` and `ranger-git`
 
-## Input Methods
+## 安装输入法
 
 Install: `fcitx` `fcitx-im` `fcitx-googlepinyin` `fcitx-configtool`
 
@@ -44,23 +44,6 @@ export XMODIFIERS="@im=fcitx"
 #### Fcitx用户需要将第一个输入法设置为键盘-布局
 
 ## fonts
-
-#### locale
-
-In `locale.conf`:
-
-```
-LANG=en_US.UTF-8
-LC_ADDRESS=en_US.UTF-8
-LC_IDENTIFICATION=en_US.UTF-8
-LC_MEASUREMENT=en_US.UTF-8
-LC_MONETARY=en_US.UTF-8
-LC_NAME=en_US.UTF-8
-LC_NUMERIC=en_US.UTF-8
-LC_PAPER=en_US.UTF-8
-LC_TELEPHONE=en_US.UTF-8
-LC_TIME=en_US.UTF-8
-```
 
 #### My Font
 
