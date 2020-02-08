@@ -20,7 +20,8 @@ Server = http://mirrors.163.com/archlinux-cn/$arch
 
 ```
 [blackarch]
-Server = https://mirrors.ustc.edu.cn/blackarch/$repo/os/$arch
+SigLevel = Optional TrustAll
+Server = https://mirrors.tuna.tsinghua.edu.cn/blackarch/$repo/os/$arch
 ```
 
 然后请安装 `blackarch-keyring` 包以导入 GPG key。
