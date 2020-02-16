@@ -1,13 +1,11 @@
 *.swp
-
-
-
-view/
 .DS_Store
+view/
 plugged/
 sessions/
 autoload/
 tmp/
 .netrwhist
 _machine_specific.vim
+.vim-bookmarks
 
