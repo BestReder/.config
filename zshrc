@@ -1,4 +1,3 @@
-export TERM="xterm-256color"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -9,8 +8,6 @@ export ZSH=$HOME/.oh-my-zsh
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-
-POWERLEVEL9K_MODE='awesome-fontconfig'
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
@@ -71,8 +68,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sublime zsh-syntax-highlighting zsh-autosuggestions extract web-search themes cp sudo)
-#safe-paste
+plugins=(cp themes extract sublime git zsh-autosuggestions zsh-syntax-highlighting web-search sudo)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -102,20 +98,22 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+#[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+#export TERM="xterm-256color"
+
+#POWERLEVEL9K_MODE='awesome-fontconfig'
+POWERLEVEL9K_MODE='nerdfont-complete'
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(load battery)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir dir_writable vcs)
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
+
 alias ra="ranger"
+alias s="screenfetch"
 alias m="neomutt"
 alias n="neofetch"
-alias s="screenfetch"
 
-#source .bashrc
-
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 export RANGER_LOAD_DEFAULT_RC=FALSE
-
-
-POWERLEVEL9K_CONTEXT_TEMPLATE="archlinux"
-#POWERLEVEL9K_CONTEXT_TEMPLATE="%n@%m"
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs)
-#context
-POWERLEVEL9K_DIR_SHOW_WRITABLE=true
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(load battery)
