@@ -1,8 +1,8 @@
 # 我的配置
 
-这个配置文件夹包括`i3`和`alacritty`配置，但是现在我使用的是`dwm`和`alacritty`
-
-# archlinuxcn(163源)
+这个配置文件夹包括`i3`、`alacritty`、`zsh`、`neovim`和`polybar`的配置，现在我也没有使用`i3`和`polybar`而是`dwm`
+-----------------------------------------------------------
+## archlinuxcn(163源)
 
 在`/etc/pacman.conf`文件末尾添加以下内容：
 
@@ -12,9 +12,9 @@ SigLevel = Optional TrustedOnly
 Server = http://mirrors.163.com/archlinux-cn/$arch
 ```
 
-之后安装 archlinuxcn-keyring 包导入 GPG key
+之后安装`archlinuxcn-keyring`包导入`GPG`key
 
-# blackarch(中科大源)
+## blackarch(中科大源)
 
 在 `/etc/pacman.conf` 文件末尾添加两行：
 
@@ -24,17 +24,18 @@ SigLevel = Optional TrustAll
 Server = https://mirrors.tuna.tsinghua.edu.cn/blackarch/$repo/os/$arch
 ```
 
-然后请安装 `blackarch-keyring` 包以导入 GPG key。
+然后请安装 `blackarch-keyring` 包以导入`GPG`key。
 
 ## Ranger
 
-use `pip install ueberzug` and `ranger-git`
+`pip install ueberzug`
+`sudo pacman -S ranger`
 
 ## 安装输入法
 
-Install: `fcitx` `fcitx-im` `fcitx-googlepinyin` `fcitx-configtool`
+安装: `fcitx` `fcitx-im` `fcitx-googlepinyin` `fcitx-configtool`
 
-And in `/etc/X11/xinit/xinitrc`:
+在文件头部添加`/etc/X11/xinit/xinitrc`:
 
 ```
 export GTK_IM_MODULE=fcitx
@@ -42,17 +43,15 @@ export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
 ```
 
-#### Fcitx用户需要将第一个输入法设置为键盘-布局
+## 字体
 
-## fonts
+#### 我的字体
 
-#### My Font
+我使用 `Source Code Pro` 和 `nerd-fonts-source-code-pro`.
 
-I use the `Source Code Pro` font and `nerd-fonts-source-code-pro`.
+#### 关于 Noto
 
-#### About Noto
-
-Just install `noto-fonts` (not `-all`). It's already bloated. Check `/usr/share/fonts/noto`
+只安装 `noto-fonts` (not `-all`). 若全部安装会导致`dwm`字体显示错误. Cheak `/usr/share/fonts/noto`
 
 #### Emoji
 
@@ -60,7 +59,7 @@ Just install `noto-fonts` (not `-all`). It's already bloated. Check `/usr/share/
 yay -S ttf-linux-libertine ttf-inconsolata ttf-joypixels ttf-twemoji-color noto-fonts-emoji ttf-liberation ttf-droid
 ```
 
-#### Chinese
+#### 中文
 
 ```
 yay -S wqy-bitmapfont wqy-microhei wqy-microhei-lite wqy-zenhei adobe-source-han-mono-cn-fonts adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts
