@@ -1,0 +1,9 @@
+configuration {
+	modi: "window,run,ssh,drun";
+	show-icons: true;
+	lines: 16;
+  font: "SauceCodePro Nerd Font Mono 14";
+  show-icons: true;
+  theme: "oxide";
+  display-drun: "Search";
+}
